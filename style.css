@@ -75,42 +75,71 @@ img {
 /* CSS media queries */
 @media screen and (max-width: 420px) {
 
+    /* COMMONS */
   body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
   }
 
-  /* BLOCCO LEZIONI */
-  #lezioni .row {
+  .row {
+    padding: 30px 20px;
     margin: 0;
-    background-color: #f2f2cd;
   }
-  #lezioni h1 {
+
+  h1 {
     font-size: 60px;
-    margin-top: 0;
+    padding-bottom: 40px;
+    margin: 0;
   }
-  #lezioni h3 {
+  .row h3 {
     font-size: 40px;
     margin: 0;
   }
-  #lezioni .row > div {
+  .row > div {
     font-size: 30px;
-    margin-bottom: 50px;
+  }
+  .row > div:not(.row > div:last-child) {
+    padding-bottom: 50px;
+  }
+
+  /* BLOCCO LEZIONI */
+  #lezioni .row {
+    background-color: #f2f2cd;
   }
   #lezioni .row > .left,
   #lezioni .row > .right {
     float: none;
     width: 100%;
+    margin: 0;
+    background-color: #f2f2cd;
   }
 
   /* BLOCCO STEPS */
   #steps {
-
+    background-color: #ffffff;
+  }
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: none;
+    width: 100%;
   }
 
   /* BLOCCO PERCHE */
   #why {
-
+    background-color: #ffffff;
+  }
+  #why .row {
+    background-color: #f2f2cd;
+  }
+  #why hr {
+    background-color: #000000;
+  }
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    width: 100%;
+    margin-top: 0;
   }
 }
