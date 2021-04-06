@@ -99,13 +99,13 @@ img {
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   .row h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .row > div {
-    font-size: 18px;
+    font-size: 15px;
   }
   img:not(#why img) {
     height: 120px;
