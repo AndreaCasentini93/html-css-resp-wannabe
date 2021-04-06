@@ -73,9 +73,13 @@ img {
 }
 
 /* CSS media queries */
+@media screen and (max-width: 800px) {
+  
+}
+
 @media screen and (max-width: 420px) {
 
-    /* COMMONS */
+  /* COMMONS */
   body {
     box-sizing: border-box;
     padding: 0;
@@ -133,13 +137,13 @@ img {
   #why .row {
     background-color: #f2f2cd;
   }
-  #why hr {
-    background-color: #000000;
-  }
   #why .row>.first,
   #why .row>.second,
   #why .row>.third {
     width: 100%;
     margin-top: 0;
+  }
+  #why hr {
+    background-color: #000000;
   }
 }
