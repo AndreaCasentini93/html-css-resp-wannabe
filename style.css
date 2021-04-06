@@ -73,7 +73,7 @@ img {
 }
 
 /* CSS media queries */
-@media screen and (max-width: 1000px) and (min-width: 421px) {
+@media screen and (max-width: 1000px) and (min-width: 420.1px) {
   
   /* COMMONS */
   * {
@@ -83,8 +83,7 @@ img {
   }
 
   .container {
-    display: inline-block;
-    margin: 0;
+    margin: 0 auto;
   }
   .container.grey {
     background-color: #ffffff;
@@ -108,8 +107,9 @@ img {
   .row > div {
     font-size: 18px;
   }
-  img {
-    height: 80px;
+  img:not(#why img) {
+    height: 120px;
+    margin: 20px 0;
   }
 
   /* BLOCCO LEZIONI */
@@ -143,6 +143,11 @@ img {
   #why hr {
     margin: 20px;
     background-color: #428bca;
+  }
+  #why img {
+    height: 120px;
+    padding: 20px;
+    margin: 20px 0;
   }
 
 }
