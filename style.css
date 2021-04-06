@@ -76,7 +76,7 @@ img {
 @media screen and (max-width: 1000px) and (min-width: 421px) {
   
   /* COMMONS */
-  body {
+  * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -150,19 +150,14 @@ img {
 @media screen and (max-width: 420px) {
 
   /* COMMONS */
-  body {
+  * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
   }
 
-  .row {
-    padding: 30px 20px;
-    margin: 0;
-  }
-
   .container {
-    display: inline-block;
+    padding: 10px;
   }
   .container.grey {
     background-color: #ffffff;
@@ -171,20 +166,23 @@ img {
     background-color: #f2f2cd;
   }
 
-  h1 {
-    font-size: 60px;
-    padding-bottom: 40px;
+  .row {
+    width: 100%;
     margin: 0;
+  }
+
+  h1 {
+    font-size: 20px;
   }
   .row h3 {
-    font-size: 40px;
-    margin: 0;
+    font-size: 14px;
   }
   .row > div {
-    font-size: 30px;
+    font-size: 12px;
   }
-  .row > div:not(.row > div:last-child) {
-    padding-bottom: 50px;
+  img {
+    height: 100px;
+    margin-top: 20px;
   }
 
   /* BLOCCO LEZIONI */
@@ -192,7 +190,6 @@ img {
   #lezioni .row > .right {
     float: none;
     width: 100%;
-    margin: 0;
   }
 
   /* BLOCCO STEPS */
@@ -211,7 +208,6 @@ img {
     margin-top: 0;
   }
   #why hr {
-    margin: 0;
     background-color: #000000;
   }
 
