@@ -109,7 +109,7 @@ img {
     font-size: 18px;
   }
   img {
-    height: 100px;
+    height: 80px;
   }
 
   /* BLOCCO LEZIONI */
@@ -180,8 +180,13 @@ img {
   .row > div {
     font-size: 12px;
   }
-  img {
-    height: 100px;
+  img:not(#why img) {
+    height: 80px;
+    margin-top: 20px;
+  }
+  #why .row img {
+    height: 80px;
+    padding: 20px;
     margin-top: 20px;
   }
 
