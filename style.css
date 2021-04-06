@@ -94,21 +94,22 @@ img {
   }
 
   .row {
+    width: 80%;
     padding: 20px;
     margin: 50px auto;
   }
 
   h1 {
-    font-size: 40px;
-  }
-  .row h3 {
     font-size: 30px;
   }
-  .row > div {
+  .row h3 {
     font-size: 20px;
   }
+  .row > div {
+    font-size: 18px;
+  }
   img {
-    height: 130px;
+    height: 100px;
   }
 
   /* BLOCCO LEZIONI */
