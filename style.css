@@ -74,13 +74,21 @@ img {
 
 /* CSS media queries */
 @media screen and (max-width: 420px) {
-  
+
+  body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
   /* BLOCCO LEZIONI */
   #lezioni .row {
+    margin: 0;
     background-color: #f2f2cd;
   }
   #lezioni h1 {
     font-size: 60px;
+    margin-top: 0;
   }
   #lezioni h3 {
     font-size: 40px;
@@ -90,12 +98,11 @@ img {
     font-size: 30px;
     margin-bottom: 50px;
   }
-  #lezioni .row>.left,
-  #lezioni .row>.right {
-    width: 100%;
+  #lezioni .row > .left,
+  #lezioni .row > .right {
     float: none;
+    width: 100%;
   }
-
 
   /* BLOCCO STEPS */
   #steps {
