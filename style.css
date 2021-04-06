@@ -73,7 +73,7 @@ img {
 }
 
 /* CSS media queries */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   
 }
 
@@ -89,6 +89,16 @@ img {
   .row {
     padding: 30px 20px;
     margin: 0;
+  }
+
+  .container {
+    display: inline-block;
+  }
+  .container.grey {
+    background-color: #ffffff;
+  }
+  body .container:nth-of-type(odd) {
+    background-color: #f2f2cd;
   }
 
   h1 {
@@ -108,21 +118,14 @@ img {
   }
 
   /* BLOCCO LEZIONI */
-  #lezioni .row {
-    background-color: #f2f2cd;
-  }
   #lezioni .row > .left,
   #lezioni .row > .right {
     float: none;
     width: 100%;
     margin: 0;
-    background-color: #f2f2cd;
   }
 
   /* BLOCCO STEPS */
-  #steps {
-    background-color: #ffffff;
-  }
   #steps .row>.left,
   #steps .row>.central,
   #steps .row>.right {
@@ -131,12 +134,6 @@ img {
   }
 
   /* BLOCCO PERCHE */
-  #why {
-    background-color: #ffffff;
-  }
-  #why .row {
-    background-color: #f2f2cd;
-  }
   #why .row>.first,
   #why .row>.second,
   #why .row>.third {
@@ -144,6 +141,7 @@ img {
     margin-top: 0;
   }
   #why hr {
+    margin: 0;
     background-color: #000000;
   }
 }
