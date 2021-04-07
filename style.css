@@ -93,7 +93,7 @@ img {
   }
 
   .row {
-    width: 80%;
+    width: 100%;
     padding: 20px;
     margin: 0 auto;
   }
@@ -119,6 +119,9 @@ img {
     padding: 10px;
     margin: 0;
   }
+  #lezioni .row > .right {
+    float: right;
+  }
 
   /* BLOCCO STEPS */
   #steps .row>.left,
@@ -126,7 +129,8 @@ img {
   #steps .row>.right {
     float: none;
     display: inline-block;
-    width: 49%;
+    width: calc(49% - 40px);
+    padding: 20px;
     margin: 0 auto;
   }
 
